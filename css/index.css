@@ -1,0 +1,387 @@
+/*-------------------------------------------------- <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->------------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body.dark-mode {
+  background-color: #2B2A4C;
+  color: #fff;
+}
+.dark-mode-toggle {
+  position: fixed;
+  margin: 15px;
+  padding: 10px;
+  
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  margin: 50px;
+}
+
+.switch {
+  display: block;
+  width: 50px;
+  height: 26px;
+  border-radius: 20px;
+  background: #999;
+  position: relative;
+  cursor: pointer;
+}
+
+.switch:before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.checkbox:checked + .switch {
+  background: #2c3e50;
+}
+
+.checkbox:checked + .switch:before {
+  transform: translateX(24px);
+}
+/*========*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #EEE2DE;
+}
+
+.crud {
+/*  max-width: 800px;*/
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 5px;
+  ;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #fff;
+}
+
+.logo p {
+  font-size: 20px;
+  color: #888;
+}
+
+.inputs {
+  margin-bottom: 40px;
+}
+
+.inputs input, .inputs button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #f1eef0;
+  color: #000000;
+}
+#submit{
+  background: #46458C;
+  color: #fff;
+}
+#submit:hover{
+  background: #C4B0FF;
+}
+
+.inputs input[type="number"] {
+  width: calc(25% - 10px);
+  margin-right: 10px;
+}
+
+.inputs input[type="text"], .inputs input[type="number"], .inputs button {
+  display: inline-block;
+}
+
+.inputs input:focus {
+  outline: none;
+  border: 2px solid #231d23;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price small {
+  font-size: 18px;
+  color: #888;
+}
+
+.outputs {
+  margin-bottom: 40px;
+}
+
+.searchblock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchblock input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f1eef0;
+  color: #000000;
+}
+
+.btnsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnsearch button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.btnsearch button:first-child {
+  margin-right: 10px;
+  background-color: #46458C;
+  color: #fff;
+}
+
+.btnsearch button:last-child {
+  background-color: #46458C;
+  color: #fff;
+  border: 2px solid #46458C;
+}
+
+.btnsearch button:hover {
+  background-color: #C4B0FF;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+table th {
+  background-color: #46458C;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #605f92;
+  color: #fff;
+}
+
+table tr:hover {
+  background-color: #F3BCC8;
+  color: #000;
+}
+
+table td.actions button {
+  background-color: #231d23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+table td.actions button:hover {
+  background-color: #231d23;
+}
+
+#deleteAll {
+  width: 100%;
+  height: 30px ;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.alert {
+  background-color: #FFA07A;
+  color: #fff;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.alert.success {
+  background-color: #228B22;
+}
+button {
+  background-color: #46458C;
+  color: #fff;
+  border: 2px solid #231d23;
+  border-radius: 10px 10px 10px 4px;
+  transition: 0.9s;
+
+}
+
+button:hover {
+  background-color: #C4B0FF;
+  color: #231d23;
+}
+#total{
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 20%;
+  font-size: 16px;
+  background-color: #f1eef0;
+  color: #000;
+}
+#total:before {
+  content: 'total:';
+}
+/* إعدادات الرأس */
+header {
+	background-color: #46458C;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+/* إعدادات رموز الشبكات الاجتماعية */
+.social-icons {
+	display: flex;
+}
+
+.social-icons a {
+	margin-right: 10px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.social-icons a:hover {
+	color: #29fd53;
+}
+
+/* إعدادات الذيل */
+footer {
+	background-color: #222;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color:  #46458C;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+span{
+  color:#f7fe8f;
+}
+/*Mohamed El-hariri */
+/*  media quare */
+@media screen and (max-width: 600px) {
+  *{margin:0;
+    padding:0 ;
+  }
+  .curd{
+  width: 60%;
+  margin: auto;
+}
+.head{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price small {
+  font-size: 18px;
+  color: #888;
+}
+
+.outputs {
+  margin-bottom: 40px;
+}
+#total{
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 20%;
+  font-size: 16px;
+  background-color: #f1eef0;
+  color: #000000;
+}
+#total:before {
+  content: 'total:';
+}
+button {
+  background-color: #231d23;
+  color: #fff;
+  border: 2px solid #000000;
+  border-radius: 10px 10px 10px 4px;
+  transition: 0.9s;
+
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+}
+/*-------------------------------------------------- <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->------------------------*/

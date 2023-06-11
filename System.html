@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+         <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>System Mohamed El-hariri </title>
+</head>
+<body>
+  	<header>
+		<div class="logo"><h2>Mohamed El-hariri</h2>
+	    <p> system</p></div>
+     <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->
+		<div class="social-icons">
+			<a href="https://www.facebook.com/ana.el7riri?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/ehriri6?t=u1Ljh9RZDnaEw5MarQXHVQ&s=09"><i class="fab fa-twitter"></i></a>
+			<a href="https://instagram.com/mohamed_elhriri6?igshid=ZDc4ODBmNjlmNQ=="><i class="fab fa-instagram"></i></a>
+			<a href="https://github.com/Mohamed-El-hariri"><i class="fab fa-github"></i></a>
+			<div class="dark-mode-toggle">
+  <input type="checkbox" id="toggle" class="checkbox">
+  <label onclick="toggleDarkMode()" for="toggle" class="switch"></label>
+</div>
+  <button id="myButton" onclick="changeText()">ar</button>
+		</div>
+		
+	</header>
+	<main>
+  
+	<div class="crud">
+	  <div class="head">
+	   
+	  </div>
+    <div class="inputs">
+      <input placeholder="title" type="tixt" id="title">
+      <div class="price">
+ <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+ <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+<input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+<input onkeyup="getTotal()" type="number" id="Discounts" placeholder="Discounts">
+<small id="total"></small>
+      </div>
+    <input placeholder="count" type="number" id="count">
+     <input placeholder="category" type="tixt" id="category">
+     <button id="submit">create</button>
+    </div>
+    <div class="outputs">
+      <div class="searchblock">
+ <input type="text" id="search" onkeyup="search()" placeholder="Search...">
+ <div class="btnsearch">
+   <button id="searchcategory">search</button>
+ </div>
+      </div>
+      
+    </div>
+    <div id="deleteAll"></div>
+    <table> 
+    <tr>
+ <th>id</th>
+ <th>title</th>
+ <th>price</th>
+ <th>taxes</th>
+ <th>ads</th>
+ <th>Discounts</th>
+  <th>total</th>
+ <th>category</th>
+ <th>update</th>
+ <th>delete</th>
+        
+      </tr>
+      <tbody id="tbody">
+
+        <tbody>
+    </table>
+	</div>
+		</main>
+	<footer id="footer">
+		<!-- إضافة نص حقوق الملكية -->
+		<p><span>&copy; 2023 </span> All rights reserved. Designed by Mohamed El-hariri.</p>
+	</footer>
+	<!-- End Table -->
+	  <script src="js/index.js">
+	    
+	  </script>
+</body>
+</html>

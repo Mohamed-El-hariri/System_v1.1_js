@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+        	 <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>System Mohamed El-hariri </title>
+</head>
+<body>
+  	<header>
+		<div class="logo"><h2>محمد الحريري</h2>
+	    <p> نظام</p></div>
+
+ <!-- version v1.1-->
+		<!-- Mohamed El-hariri -->
+			<div class="social-icons">
+			<a href="https://www.facebook.com/ana.el7riri?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/ehriri6?t=u1Ljh9RZDnaEw5MarQXHVQ&s=09"><i class="fab fa-twitter"></i></a>
+			<a href="https://instagram.com/mohamed_elhriri6?igshid=ZDc4ODBmNjlmNQ=="><i class="fab fa-instagram"></i></a>
+			<a href="https://github.com/Mohamed-El-hariri"><i class="fab fa-github"></i></a>
+			<div class="dark-mode-toggle">
+  <input type="checkbox" id="toggle" class="checkbox">
+  <label onclick="toggleDarkMode()" for="toggle" class="switch"></label>
+</div>
+  <button id="myButton" onclick="changeText()">en</button>
+		</div>
+		
+	</header>
+	
+	<main>
+	  
+
+  
+	<div class="crud">
+	  <div class="head">
+	   
+	  </div>
+    <div class="inputs">
+      <input placeholder="العنوان" type="tixt" id="title">
+      <div class="price">
+ <input onkeyup="getTotal()" type="number" id="price" placeholder="السعر">
+ <input onkeyup="getTotal()" type="number" id="taxes" placeholder="الضرائب">
+<input onkeyup="getTotal()" type="number" id="ads" placeholder="الاعلانات">
+<input onkeyup="getTotal()" type="number" id="Discounts" placeholder="الخصومات">
+<small id="total"></small>
+      </div>
+    <input placeholder="العدد" type="number" id="count">
+     <input placeholder="التصنيف" type="tixt" id="category">
+     <button id="submit">انشاء</button>
+    </div>
+    <div class="outputs">
+      <div class="searchblock">
+ <input type="text" id="search" onkeyup="search()" placeholder="البحث...">
+ <div class="btnsearch">
+   <button id="searchcategory">البحث عن المنتج</button>
+ </div>
+      </div>
+      
+    </div>
+    <div id="deleteAll"></div>
+    <table> 
+    <tr>
+ <th>رقم </th>
+ <th>العنوان</th>
+ <th>السعر</th>
+ <th>الضرائب</th>
+ <th>الاعلانات</th>
+ <th>الخصومات</th>
+  <th>الاجمالي</th>
+ <th>التصنيف</th>
+ <th>التعديل</th>
+ <th>الحذف</th>
+        
+      </tr>
+      <tbody id="tbody">
+
+        <tbody>
+    </table>
+	</div>
+		</main>
+	<footer id="footer">
+		<!-- إضافة نص حقوق الملكية -->
+		<p><span>&copy; 2023 </span> كل الحقوق محفوظة. تصميم محمد الحريري.</p>
+	</footer>
+<button id="myButton" onclick="changeText()">ar</button>
+
+
+	<!-- End Table -->
+	  <script src="js/index.js">
+	    
+	  </script>
+</body>
+</html>
